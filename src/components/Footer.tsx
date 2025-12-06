@@ -87,7 +87,7 @@ const Footer = () => {
           <div>
             <span className="font-serif text-2xl font-bold text-foreground">PRINTO</span>
             <p className="text-muted-foreground text-sm mt-2">
-              Your trusted partner in the custom merchandise and printing industry, proudly serving both B2B &amp; B2C markets across Kuwait
+              Your trusted partner in the custom merchandise and printing industry, proudly serving both B2B and B2C markets across Kuwait
             </p>
           </div>
         </div>
