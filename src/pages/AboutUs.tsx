@@ -2,34 +2,26 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Printer, Users, Target, Award, Truck, Globe } from "lucide-react";
 const AboutUs = () => {
-  const features = [
-    {
-      icon: Award,
-      text: "High-quality, customized printing solutions",
-    },
-    {
-      icon: Users,
-      text: "Expertise in both B2B and B2C projects",
-    },
-    {
-      icon: Printer,
-      text: "Diverse product range and advanced printing methods",
-    },
-    {
-      icon: Target,
-      text: "Dedicated in-house designers and specialists",
-    },
-    {
-      icon: Globe,
-      text: "Seamless online ordering experience",
-    },
-    {
-      icon: Truck,
-      text: "Reliable delivery across Kuwait",
-    },
-  ];
-  return (
-    <div className="min-h-screen flex flex-col bg-background">
+  const features = [{
+    icon: Award,
+    text: "High-quality, customized printing solutions"
+  }, {
+    icon: Users,
+    text: "Expertise in both B2B and B2C projects"
+  }, {
+    icon: Printer,
+    text: "Diverse product range and advanced printing methods"
+  }, {
+    icon: Target,
+    text: "Dedicated in-house designers and specialists"
+  }, {
+    icon: Globe,
+    text: "Seamless online ordering experience"
+  }, {
+    icon: Truck,
+    text: "Reliable delivery across Kuwait"
+  }];
+  return <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
       {/* Hero Section */}
@@ -126,13 +118,17 @@ const AboutUs = () => {
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-foreground rounded-full"></span>
                   <span className="text-muted-foreground">
-                    A wide selection of <span style={{ color: '#7c736a' }}>premium binding options</span>
+                    A wide selection of <span style={{
+                    color: '#7c736a'
+                  }}>premium binding options</span>
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-foreground rounded-full"></span>
                   <span className="text-muted-foreground">
-                    Extensive <span style={{ color: '#7c736a' }}>customization choices</span>
+                    Extensive <span style={{
+                    color: '#7c736a'
+                  }}>customization choices</span>
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -143,7 +139,9 @@ const AboutUs = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Once your order is ready, we deliver it straight to your home or preferred location, allowing you to
                 receive your printed work without ever leaving the house. Enjoy{" "}
-                <span style={{ color: '#7c736a' }}>express delivery</span> and peace of mind knowing your work is in
+                <span style={{
+                color: '#7c736a'
+              }}>express delivery</span> and peace of mind knowing your work is in
                 expert hands.
               </p>
             </div>
@@ -159,15 +157,10 @@ const AboutUs = () => {
               Why Choose PRINTO™
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="bg-background rounded-xl p-6 flex items-start gap-4 shadow-sm border border-border"
-                >
+              {features.map((feature, index) => <div key={index} className="bg-background rounded-xl p-6 flex items-start gap-4 shadow-sm border border-border">
                   <feature.icon className="w-6 h-6 text-foreground flex-shrink-0 mt-1" />
                   <span className="text-muted-foreground">{feature.text}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -184,15 +177,12 @@ const AboutUs = () => {
               creativity, technology, and exceptional customer service, we strive to exceed expectations with every
               order.
             </p>
-            <p className="font-serif text-xl md:text-2xl font-semibold text-foreground">
-              PRINTO™ — your partner in premium printing and personalized merchandise.
-            </p>
+            <p className="font-serif text-xl md:text-2xl font-semibold text-foreground">PRINTO™  "Your Partner in Premium Printing & Personalized Merchandise"</p>
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
 export default AboutUs;
