@@ -126,7 +126,7 @@ const AboutUs = () => {
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-foreground rounded-full"></span>
                   <span className="text-muted-foreground">
-                    A wide selection of <span className="text-foreground">premium binding options</span>
+                    A wide selection of <span style={{ color: '#7c736a' }}>premium binding options</span>
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
