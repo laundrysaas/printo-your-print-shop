@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ShoppingCart, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,9 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-foreground">
+          <Link to="/" className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-foreground">
             PRINTO
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
