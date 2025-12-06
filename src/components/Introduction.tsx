@@ -1,0 +1,48 @@
+import productMug from "@/assets/product-mug.jpg";
+import { ArrowDownRight } from "lucide-react";
+
+const Introduction = () => {
+  return (
+    <section className="py-20 lg:py-32" id="custom">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+          {/* Left Content */}
+          <div className="flex flex-col justify-center">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-4xl">☕</span>
+            </div>
+            <h2 className="font-serif text-5xl lg:text-7xl font-bold text-foreground leading-[0.95] mb-6">
+              Custom
+              <br />
+              Design
+            </h2>
+            <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-md mb-8">
+              At PRINTO, we specialize in bringing your creative vision to life. 
+              Whether it's personalized t-shirts, branded merchandise, or unique 
+              gifts, our state-of-the-art printing technology ensures vibrant, 
+              long-lasting results that exceed expectations.
+            </p>
+            <button className="flex items-center gap-2 text-foreground font-medium group">
+              <span>Learn More</span>
+              <ArrowDownRight className="h-5 w-5 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform" />
+            </button>
+          </div>
+
+          {/* Right Content */}
+          <div className="flex flex-col gap-4">
+            <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+              Introduction
+            </span>
+            <img
+              src={productMug}
+              alt="Custom printed ceramic mug with personalized design"
+              className="w-full aspect-[4/3] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Introduction;
