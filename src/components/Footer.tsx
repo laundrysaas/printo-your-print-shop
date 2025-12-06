@@ -4,6 +4,7 @@ const Footer = () => {
       { name: "Facebook", href: "#" },
       { name: "Instagram", href: "#" },
       { name: "TikTok", href: "#" },
+      { name: "LinkedIn", href: "#" },
     ],
     support: [
       { name: "FAQs", href: "#" },
