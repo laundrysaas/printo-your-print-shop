@@ -71,7 +71,7 @@ const Products = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="font-serif text-4xl lg:text-6xl font-bold text-foreground">
-            Our Products
+            Our custom design products
           </h2>
         </div>
 
