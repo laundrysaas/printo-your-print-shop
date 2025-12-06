@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 const Footer = () => {
   const footerLinks = {
     socialMedia: [{
@@ -75,15 +74,11 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4 text-sm">Corporate</h4>
             <ul className="flex flex-col gap-2">
               {footerLinks.corporate.map(link => <li key={link.name}>
-                  {link.isRoute ? (
-                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                  {link.isRoute ? <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                       {link.name}
-                    </Link>
-                  ) : (
-                    <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                    </Link> : <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                       {link.name}
-                    </a>
-                  )}
+                    </a>}
                 </li>)}
             </ul>
           </div>
@@ -92,7 +87,7 @@ const Footer = () => {
           <div>
             <span className="font-serif text-2xl font-bold text-foreground">PRINTO</span>
             <p className="text-muted-foreground text-sm mt-2">
-              Premium custom printing solutions for individuals and businesses.
+              Your trusted partner in the custom merchandise and printing industry, proudly serving both B2B &amp; B2C markets across Kuwait
             </p>
           </div>
         </div>
