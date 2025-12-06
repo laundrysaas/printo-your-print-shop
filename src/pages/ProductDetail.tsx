@@ -167,6 +167,9 @@ const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
   const [selectedColor, setSelectedColor] = useState(product?.colors[0]?.name || "");
+  const [selectedSize, setSelectedSize] = useState("M");
+  
+  const sizes = ["XS", "S", "M", "L", "XL", "XXL"];
 
   if (!product) {
     return (
@@ -274,6 +277,26 @@ const ProductDetail = () => {
                       {color.name}
                     </span>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Size Selector */}
+            <div className="mb-8">
+              <h3 className="font-semibold text-foreground mb-3">Select Size</h3>
+              <div className="flex flex-wrap gap-2">
+                {sizes.map((size) => (
+                  <button
+                    key={size}
+                    onClick={() => setSelectedSize(size)}
+                    className={`w-12 h-12 rounded-lg border-2 text-sm font-medium transition-colors ${
+                      selectedSize === size
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-border hover:border-foreground text-foreground"
+                    }`}
+                  >
+                    {size}
+                  </button>
                 ))}
               </div>
             </div>
