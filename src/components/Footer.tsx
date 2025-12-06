@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const footerLinks = {
     socialMedia: [{
@@ -31,7 +33,8 @@ const Footer = () => {
       href: "#"
     }, {
       name: "About Us",
-      href: "#"
+      href: "/about",
+      isRoute: true
     }, {
       name: "B2B Services",
       href: "#"
@@ -72,9 +75,15 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4 text-sm">Corporate</h4>
             <ul className="flex flex-col gap-2">
               {footerLinks.corporate.map(link => <li key={link.name}>
-                  <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-                    {link.name}
-                  </a>
+                  {link.isRoute ? (
+                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a href={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                      {link.name}
+                    </a>
+                  )}
                 </li>)}
             </ul>
           </div>
