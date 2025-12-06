@@ -1,26 +1,26 @@
-import { Printer, Palette, Shirt, Package } from "lucide-react";
+import { Sticker, FileText, CreditCard, BookOpen } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Shirt,
-      title: "Apparel Printing",
-      description: "Custom t-shirts, hoodies, and sportswear with vibrant, durable prints.",
+      icon: Sticker,
+      title: "Stickers",
+      description: "Custom stickers in various shapes and sizes for branding and promotion.",
     },
     {
-      icon: Palette,
-      title: "Design Services",
-      description: "Professional design assistance to bring your creative vision to life.",
+      icon: FileText,
+      title: "Papers",
+      description: "High-quality printed papers for letterheads, flyers, and marketing materials.",
     },
     {
-      icon: Printer,
-      title: "Bulk Orders",
-      description: "Competitive pricing for large orders. Perfect for events and businesses.",
+      icon: CreditCard,
+      title: "Cards",
+      description: "Business cards, greeting cards, and promotional cards with premium finishes.",
     },
     {
-      icon: Package,
-      title: "Merchandise",
-      description: "Mugs, bags, caps, and more. Complete branding solutions for your needs.",
+      icon: BookOpen,
+      title: "Notebooks",
+      description: "Custom branded notebooks and journals for corporate gifts and personal use.",
     },
   ];
 
@@ -29,7 +29,7 @@ const Services = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="font-serif text-4xl lg:text-6xl font-bold text-foreground mb-4">
-            Our Services
+            Our printing services
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             From concept to creation, we offer comprehensive printing solutions tailored to your needs.
