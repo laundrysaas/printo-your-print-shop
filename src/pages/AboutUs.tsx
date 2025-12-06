@@ -72,9 +72,7 @@ const AboutUs = () => {
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
                 Expertise You Can Trust
               </h2>
-              <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                At PRINTO™, quality is driven by people. Our in-house team of skilled designers and printing specialists works diligently at every stage — from concept and design to printing and finishing — to ensure the highest standards of quality, precision, and consistency.
-              </p>
+              <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">At PRINTO™, quality is driven by people. Our in-house team of skilled designers and printing specialists works diligently at every stage from concept and design to printing and finishing to ensure the highest standards of quality, precision, and consistency.</p>
             </div>
             <div className="bg-primary text-primary-foreground rounded-2xl p-8 lg:p-12 text-center">
               <p className="text-lg leading-relaxed">
