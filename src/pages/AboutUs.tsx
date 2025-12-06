@@ -1,19 +1,27 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Printer, Users, Target, Award, Truck, Globe } from "lucide-react";
-
 const AboutUs = () => {
-  const features = [
-    { icon: Award, text: "High-quality, customized printing solutions" },
-    { icon: Users, text: "Expertise in both B2B and B2C projects" },
-    { icon: Printer, text: "Diverse product range and advanced printing methods" },
-    { icon: Target, text: "Dedicated in-house designers and specialists" },
-    { icon: Globe, text: "Seamless online ordering experience" },
-    { icon: Truck, text: "Reliable delivery across Kuwait" },
-  ];
-
-  return (
-    <div className="min-h-screen flex flex-col bg-background">
+  const features = [{
+    icon: Award,
+    text: "High-quality, customized printing solutions"
+  }, {
+    icon: Users,
+    text: "Expertise in both B2B and B2C projects"
+  }, {
+    icon: Printer,
+    text: "Diverse product range and advanced printing methods"
+  }, {
+    icon: Target,
+    text: "Dedicated in-house designers and specialists"
+  }, {
+    icon: Globe,
+    text: "Seamless online ordering experience"
+  }, {
+    icon: Truck,
+    text: "Reliable delivery across Kuwait"
+  }];
+  return <div className="min-h-screen flex flex-col bg-background">
       <Header />
       
       {/* Hero Section */}
@@ -108,7 +116,7 @@ const AboutUs = () => {
                 </li>
               </ul>
               <p className="text-muted-foreground leading-relaxed">
-                Once your order is ready, we deliver it straight to your home or preferred location, allowing you to receive your printed work without ever leaving the house. Enjoy <strong className="text-foreground">free express delivery</strong> and peace of mind knowing your work is in expert hands.
+                Once your order is ready, we deliver it straight to your home or preferred location, allowing you to receive your printed work without ever leaving the house. Enjoy <strong className="text-foreground">express delivery</strong> and peace of mind knowing your work is in expert hands.
               </p>
             </div>
           </div>
@@ -123,15 +131,10 @@ const AboutUs = () => {
               Why Choose PRINTO™
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {features.map((feature, index) => (
-                <div 
-                  key={index}
-                  className="bg-background rounded-xl p-6 flex items-start gap-4 shadow-sm border border-border"
-                >
+              {features.map((feature, index) => <div key={index} className="bg-background rounded-xl p-6 flex items-start gap-4 shadow-sm border border-border">
                   <feature.icon className="w-6 h-6 text-foreground flex-shrink-0 mt-1" />
                   <span className="text-muted-foreground">{feature.text}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -155,8 +158,6 @@ const AboutUs = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default AboutUs;
