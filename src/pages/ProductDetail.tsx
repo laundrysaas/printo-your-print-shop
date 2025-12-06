@@ -305,7 +305,7 @@ const ProductDetail = () => {
             <div className="mb-8">
               <Link to={`/design/${id}?color=${selectedColor}`}>
                 <Button className="w-full py-6 text-base">
-                  Start Designing
+                  Customize
                 </Button>
               </Link>
             </div>
