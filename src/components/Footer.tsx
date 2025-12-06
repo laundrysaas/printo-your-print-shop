@@ -8,6 +8,8 @@ const Footer = () => {
     support: [
       { name: "FAQs", href: "#" },
       { name: "Contact Us", href: "#" },
+      { name: "Privacy Policy", href: "#" },
+      { name: "Refund Policy", href: "#" },
     ],
     theCompany: [
       { name: "Careers", href: "#" },
