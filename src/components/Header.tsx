@@ -43,6 +43,9 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="text-foreground">
               <ShoppingCart className="h-5 w-5" />
             </Button>
+            <Button variant="default" className="ml-2">
+              Login / Register
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
