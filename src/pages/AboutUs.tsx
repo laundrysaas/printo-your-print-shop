@@ -113,7 +113,7 @@ const AboutUs = () => {
               Easy Online Printing Solutions
             </h2>
             <p className="text-muted-foreground leading-relaxed text-center mb-12 max-w-3xl mx-auto">
-              We believe printing should be convenient and stress-free. With PRINTO's online Platform, you can configure
+              We believe printing should be convenient and stress-free. With PRINTO's online platform, you can configure
               and order your printed and bound materials from the comfort of your home. There's no need to wait in line
               even during peak submission periods, simply upload your files, customize your order, and place it directly
               online.
