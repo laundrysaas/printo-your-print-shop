@@ -25,7 +25,7 @@ const Introduction = () => {
 
           {/* Right Content */}
           <div className="flex flex-col gap-4">
-            <img src={productMug} alt="Custom printed ceramic mug with personalized design" className="w-full aspect-[4/3] object-cover" />
+            <img alt="Custom printed ceramic mug with personalized design" className="w-full aspect-[4/3] object-cover" src="/lovable-uploads/3add2519-4d2e-4ce1-bf88-4a42951e9596.png" />
           </div>
         </div>
       </div>
