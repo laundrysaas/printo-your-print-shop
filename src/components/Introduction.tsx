@@ -25,9 +25,6 @@ const Introduction = () => {
 
           {/* Right Content */}
           <div className="flex flex-col gap-4">
-            <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-              Introduction
-            </span>
             <img src={productMug} alt="Custom printed ceramic mug with personalized design" className="w-full aspect-[4/3] object-cover" />
           </div>
         </div>
