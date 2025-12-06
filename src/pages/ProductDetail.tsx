@@ -272,12 +272,9 @@ const ProductDetail = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex gap-4 mb-8">
-              <Button className="flex-1 py-6 text-base">
+            <div className="mb-8">
+              <Button className="w-full py-6 text-base">
                 Start Designing
-              </Button>
-              <Button variant="outline" className="flex-1 py-6 text-base">
-                Get a Quote
               </Button>
             </div>
 
