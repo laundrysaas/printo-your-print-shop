@@ -2,6 +2,11 @@ import productTshirt from "@/assets/product-tshirt.jpg";
 import productMug from "@/assets/product-mug.jpg";
 import productBag from "@/assets/product-bag.jpg";
 import productHoodie from "@/assets/product-hoodie.jpg";
+import productCap from "@/assets/product-cap.jpg";
+import productThermo from "@/assets/product-thermo.jpg";
+import productCups from "@/assets/product-cups.jpg";
+import productStationery from "@/assets/product-stationery.jpg";
+import productDiary from "@/assets/product-diary.jpg";
 
 const Products = () => {
   const products = [
@@ -28,6 +33,36 @@ const Products = () => {
       name: "Hoodies",
       image: productHoodie,
       description: "Cozy fleece lined",
+    },
+    {
+      id: 5,
+      name: "Caps",
+      image: productCap,
+      description: "Embroidered designs",
+    },
+    {
+      id: 6,
+      name: "Thermo Bottles",
+      image: productThermo,
+      description: "Insulated stainless steel",
+    },
+    {
+      id: 7,
+      name: "Cups",
+      image: productCups,
+      description: "Custom branded cups",
+    },
+    {
+      id: 8,
+      name: "Stationery",
+      image: productStationery,
+      description: "Complete branding sets",
+    },
+    {
+      id: 9,
+      name: "Diary",
+      image: productDiary,
+      description: "Premium leather planners",
     },
   ];
 
