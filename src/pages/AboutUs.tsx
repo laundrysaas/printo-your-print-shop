@@ -132,7 +132,7 @@ const AboutUs = () => {
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-foreground rounded-full"></span>
                   <span className="text-muted-foreground">
-                    Extensive <strong className="text-foreground">customization choices</strong>
+                    Extensive <span style={{ color: '#7c736a' }}>customization choices</span>
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
