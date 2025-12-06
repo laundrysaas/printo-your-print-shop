@@ -6,7 +6,7 @@ const FutureMindset = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left Image */}
           <div>
-            <img src={productBag} alt="Custom printed canvas tote bag with geometric design" className="w-full aspect-square object-cover" />
+            <img alt="Custom printed canvas tote bag with geometric design" className="w-full aspect-square object-cover" src="/lovable-uploads/5209c851-e678-49b8-acb1-4f5e70f197f6.png" />
           </div>
 
           {/* Right Content */}
