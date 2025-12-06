@@ -1,18 +1,12 @@
 import productBag from "@/assets/product-bag.jpg";
 import { ArrowDownRight } from "lucide-react";
-
 const FutureMindset = () => {
-  return (
-    <section className="py-20 lg:py-32 bg-card">
+  return <section className="py-20 lg:py-32 bg-card">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left Image */}
           <div>
-            <img
-              src={productBag}
-              alt="Custom printed canvas tote bag with geometric design"
-              className="w-full aspect-square object-cover"
-            />
+            <img src={productBag} alt="Custom printed canvas tote bag with geometric design" className="w-full aspect-square object-cover" />
           </div>
 
           {/* Right Content */}
@@ -26,11 +20,7 @@ const FutureMindset = () => {
               Solutions
             </h2>
             <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-md mb-8">
-              PRINTO's future mindset involves expanding our market 
-              influence through innovation, sustainability, and trendsetting designs. 
-              We aim to enhance our digital presence, foster designer 
-              collaborations, and offer high-quality prints that resonate with a 
-              global, style-conscious audience.
+              From corporate documents to custom merchandise, we combine advanced printing technology with premium materials to deliver sharp details, rich colors, and consistent results every time
             </p>
             <button className="flex items-center gap-2 text-foreground font-medium group">
               <span>Discover More</span>
@@ -39,8 +29,6 @@ const FutureMindset = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FutureMindset;
