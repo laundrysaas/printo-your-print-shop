@@ -84,11 +84,8 @@ const DesignStudio = () => {
               ))}
             </div>
             
-            <Button variant="outline" className="hidden sm:inline-flex">
+            <Button variant="outline">
               Save Design
-            </Button>
-            <Button>
-              Get Price Quote
             </Button>
           </div>
         </div>
