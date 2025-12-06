@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
 const GetInTouch = () => {
-  return (
-    <section className="py-20 lg:py-32 bg-primary text-primary-foreground" id="contact">
+  return <section className="py-20 lg:py-32 bg-primary text-primary-foreground" id="contact">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="font-serif text-5xl lg:text-8xl xl:text-[10rem] font-bold text-center leading-none mb-12 lg:mb-20 tracking-tight">
           GET IN TOUCH
@@ -53,24 +51,18 @@ const GetInTouch = () => {
 
         {/* Newsletter */}
         <div className="max-w-md mx-auto text-center">
-          <h3 className="font-semibold text-lg mb-2">Subscribe To Us!</h3>
+          <h3 className="font-semibold text-lg mb-2">Print More. Pay Less.</h3>
           <p className="text-primary-foreground/80 text-sm mb-4">
             Sign Up For Our Email List And Receive 10% Off Your First Order
           </p>
           <div className="flex gap-2">
-            <Input
-              type="email"
-              placeholder="Your Email Address"
-              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50"
-            />
+            <Input type="email" placeholder="Your Email Address" className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50" />
             <Button variant="secondary" className="shrink-0">
               Subscribe
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default GetInTouch;
