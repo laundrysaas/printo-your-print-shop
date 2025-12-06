@@ -143,7 +143,7 @@ const AboutUs = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Once your order is ready, we deliver it straight to your home or preferred location, allowing you to
                 receive your printed work without ever leaving the house. Enjoy{" "}
-                <strong className="text-foreground">express delivery</strong> and peace of mind knowing your work is in
+                <span style={{ color: '#7c736a' }}>express delivery</span> and peace of mind knowing your work is in
                 expert hands.
               </p>
             </div>
