@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useState } from "react";
 
 import productTshirt from "@/assets/product-tshirt.jpg";
 import productMug from "@/assets/product-mug.jpg";
@@ -165,6 +166,7 @@ const products = [
 const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
+  const [selectedColor, setSelectedColor] = useState(product?.colors[0]?.name || "");
 
   if (!product) {
     return (
@@ -259,7 +261,12 @@ const ProductDetail = () => {
                 {product.colors.map((color) => (
                   <div key={color.name} className="text-center">
                     <button
-                      className="w-12 h-12 rounded-full border-2 border-border hover:border-foreground transition-colors"
+                      onClick={() => setSelectedColor(color.name)}
+                      className={`w-12 h-12 rounded-full border-2 transition-colors ${
+                        selectedColor === color.name
+                          ? "border-foreground ring-2 ring-foreground ring-offset-2"
+                          : "border-border hover:border-foreground"
+                      }`}
                       style={{ backgroundColor: color.value }}
                       aria-label={color.name}
                     />
@@ -273,9 +280,11 @@ const ProductDetail = () => {
 
             {/* Action Buttons */}
             <div className="mb-8">
-              <Button className="w-full py-6 text-base">
-                Start Designing
-              </Button>
+              <Link to={`/design/${id}?color=${selectedColor}`}>
+                <Button className="w-full py-6 text-base">
+                  Start Designing
+                </Button>
+              </Link>
             </div>
 
             {/* Product Details */}
