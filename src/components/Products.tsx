@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import productTshirt from "@/assets/product-tshirt.jpg";
 import productMug from "@/assets/product-mug.jpg";
 import productBag from "@/assets/product-bag.jpg";
@@ -77,7 +78,8 @@ const Products = () => {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {products.map((product) => (
-            <div
+            <Link
+              to={`/product/${product.id}`}
               key={product.id}
               className="group cursor-pointer"
             >
@@ -94,7 +96,7 @@ const Products = () => {
               <p className="text-muted-foreground text-sm">
                 {product.description}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
