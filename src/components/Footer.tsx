@@ -5,11 +5,9 @@ const Footer = () => {
       { name: "Instagram", href: "#" },
       { name: "TikTok", href: "#" },
     ],
-    customerSupport: [
-      { name: "Top Questions", href: "#" },
-      { name: "Start a Return", href: "#" },
-      { name: "Size Guide", href: "#" },
-      { name: "Gift Card", href: "#" },
+    support: [
+      { name: "FAQs", href: "#" },
+      { name: "Contact Us", href: "#" },
     ],
     theCompany: [
       { name: "Careers", href: "#" },
@@ -40,11 +38,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Customer Support */}
+          {/* Support */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Customer Support</h4>
+            <h4 className="font-semibold text-foreground mb-4 text-sm">Support</h4>
             <ul className="flex flex-col gap-2">
-              {footerLinks.customerSupport.map((link) => (
+              {footerLinks.support.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
