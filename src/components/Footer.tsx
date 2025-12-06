@@ -14,8 +14,8 @@ const Footer = () => {
     corporate: [
       { name: "Careers", href: "#" },
       { name: "About Us", href: "#" },
-      { name: "Customer Reviews", href: "#" },
-      { name: "Accessibility", href: "#" },
+      { name: "B2B Services", href: "#" },
+      { name: "Bulk Orders", href: "#" },
     ],
   };
 
