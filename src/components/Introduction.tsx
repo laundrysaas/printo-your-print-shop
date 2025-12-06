@@ -1,9 +1,7 @@
 import productMug from "@/assets/product-mug.jpg";
 import { ArrowDownRight } from "lucide-react";
-
 const Introduction = () => {
-  return (
-    <section className="py-20 lg:py-32" id="custom">
+  return <section className="py-20 lg:py-32" id="custom">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left Content */}
@@ -17,10 +15,7 @@ const Introduction = () => {
               Design
             </h2>
             <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-md mb-8">
-              At PRINTO, we specialize in bringing your creative vision to life. 
-              Whether it's personalized t-shirts, branded merchandise, or unique 
-              gifts, our state-of-the-art printing technology ensures vibrant, 
-              long-lasting results that exceed expectations.
+              Whether you have a finished concept or just a starting point, our in-house designers transform your vision into print-ready designs tailored for business branding or personal creativity
             </p>
             <button className="flex items-center gap-2 text-foreground font-medium group">
               <span>Learn More</span>
@@ -33,16 +28,10 @@ const Introduction = () => {
             <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
               Introduction
             </span>
-            <img
-              src={productMug}
-              alt="Custom printed ceramic mug with personalized design"
-              className="w-full aspect-[4/3] object-cover"
-            />
+            <img src={productMug} alt="Custom printed ceramic mug with personalized design" className="w-full aspect-[4/3] object-cover" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Introduction;
