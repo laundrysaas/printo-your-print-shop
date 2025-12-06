@@ -11,40 +11,31 @@ const GetInTouch = () => {
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-16 lg:mb-24">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
-              <span className="text-xl">📦</span>
-              <h3 className="font-semibold text-lg">Shipping</h3>
+              <span className="text-xl">⚡</span>
+              <h3 className="font-semibold text-lg">Fast Production & Delivery</h3>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              In-stock items shipped via White Glove or standard will 
-              typically ship within 2-3 weeks of purchase, unless 
-              otherwise noted. Transit can take up to 14 business 
-              days.
+              Most orders are printed and prepared within 24–72 hours. Enjoy express delivery across Kuwait, so your prints arrive when you need them, without delays
             </p>
           </div>
 
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
-              <span className="text-xl">🚚</span>
-              <h3 className="font-semibold text-lg">Delivery</h3>
+              <span className="text-xl">🎨</span>
+              <h3 className="font-semibold text-lg">Custom Design Support</h3>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Delivery requires an appointment and signature. A two-
-              person team will bring the item inside, place it in your 
-              chosen room, assemble it, and remove packaging 
-              debris.
+              Upload your own artwork or work with our in-house designers to create something truly unique. From business branding to personal gifts, we make every detail count
             </p>
           </div>
 
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
-              <span className="text-xl">↩️</span>
-              <h3 className="font-semibold text-lg">Returns</h3>
+              <span className="text-xl">✅</span>
+              <h3 className="font-semibold text-lg">Quality Guarantee</h3>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Please verify that the item aligns with your specific 
-              requirements before completing the purchase, as it 
-              does not qualify for free returns and incurs a 15% 
-              restocking fee.
+              We use premium materials and advanced printing technology to ensure vibrant colors, sharp details, and lasting results. If it’s not right, we’ll make it right
             </p>
           </div>
         </div>
