@@ -11,7 +11,7 @@ const Footer = () => {
       { name: "Privacy Policy", href: "#" },
       { name: "Refund Policy", href: "#" },
     ],
-    theCompany: [
+    corporate: [
       { name: "Careers", href: "#" },
       { name: "About Us", href: "#" },
       { name: "Customer Reviews", href: "#" },
@@ -57,11 +57,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* The Company */}
+          {/* Corporate */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">The Company</h4>
+            <h4 className="font-semibold text-foreground mb-4 text-sm">Corporate</h4>
             <ul className="flex flex-col gap-2">
-              {footerLinks.theCompany.map((link) => (
+              {footerLinks.corporate.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
