@@ -254,8 +254,8 @@ const Shop = () => {
                     className="mb-2"
                   />
                   <div className="flex justify-between text-sm text-muted-foreground">
-                    <span>${priceRange[0]}</span>
-                    <span>${priceRange[1]}</span>
+                    <span>{priceRange[0]} KD</span>
+                    <span>{priceRange[1]} KD</span>
                   </div>
                 </div>
 
@@ -335,7 +335,7 @@ const Shop = () => {
                           </h3>
                         </Link>
                         <span className="font-semibold text-primary">
-                          ${product.price}
+                          {product.price} KD
                         </span>
                       </div>
                       <p className="text-sm text-muted-foreground mb-3">
