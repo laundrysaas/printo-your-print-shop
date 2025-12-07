@@ -8,6 +8,7 @@ import ProductDetail from "./pages/ProductDetail";
 import DesignStudio from "./pages/DesignStudio";
 import PrintingServiceDetail from "./pages/PrintingServiceDetail";
 import AboutUs from "./pages/AboutUs";
+import Shop from "./pages/Shop";
 import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/design/:id" element={<DesignStudio />} />
           <Route path="/printing/:id" element={<PrintingServiceDetail />} />
